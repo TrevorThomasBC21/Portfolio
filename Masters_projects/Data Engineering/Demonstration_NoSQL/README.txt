@@ -1,0 +1,1 @@
+The file flagged LAB contains a walkthrough of setting up, loading data to, and working with a MongoDB NoSQL database.  The file flagged REPORT answers some questions about the differences and complementary nature of RDBMS and NoSQL databases in general.
