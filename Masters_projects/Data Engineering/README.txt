@@ -1,0 +1,4 @@
+# Data Engineering, MSDS 610
+## Readme
+
+This directory contains two full lab projects and two writeups on demonstrative interactive labs completed for the Data Engineering course as a part of my Master's degree in Data Science.  The two projects - Spark_Hadoop_InverseIndex and WebScraping_MongoDB - contain completely original work, and consist of Python scripts I wrote as well as writeups explaining them step by step.  In particular, the Spark_Hadoop_InverseIndex was my final project for the course and is by far the most comprehensive project in this directory.  The two demonstrative labs - MongoDB_WebAPIs and NoSQL - are contained in directories that begin with "Demonstration," and are likely only of interest to a prospective employer seeking evidence of my experience using those technologies.  The work is still completely original, but it only consists of lab writeups where I walk through terminal commands I used to complete an assignment along with their output.
