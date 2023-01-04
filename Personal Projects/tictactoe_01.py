@@ -1,11 +1,12 @@
 import numpy as np
 import pickle
 
-
+# set board size
 dimensions = 3
 rows = dimensions
 cols = dimensions
 
+# class defining gameplay between user and computer
 class Game:
     def __init__(self, p1, p2):
         self.board = np.zeros((rows, cols))
@@ -19,6 +20,7 @@ class Game:
         self.current_board = str(self.board.reshape(rows * cols))
         return self.current_board
 
+    # check for a winner
     def win_checker(self):
         diag_01 = sum([self.board[i,i] for i in range(dimensions)])
         diag_02 = sum([self.board[i, dimensions - i - 1] for i in range(dimensions)])
@@ -37,10 +39,12 @@ class Game:
         self.game_over = False
         return None
 
+    # update board with previous move
     def board_update(self, position):
         self.board[position] = self.player_mark
         self.player_mark = self.player_mark * -1
 
+    # return remaining open positions    
     def open_positions(self):
         positions = []
         for i in range(rows):
@@ -49,6 +53,7 @@ class Game:
                     positions.append((i,j))
         return positions
 
+    # train computer player for user-defined number of rounds
     def trainer(self, rounds = 100):
         for i in range(rounds):
             if i % 1000 == 0:
